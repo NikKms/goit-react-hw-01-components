@@ -1,12 +1,12 @@
 import styled from '@emotion/styled';
 
 export const Container = styled.div`
-  padding: 48px;
+  padding: ${props => props.theme.spacing(4)};
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 8px;
+  gap: ${props => props.theme.spacing(2)};
 
   background: #d9d4d4;
 `;

@@ -7,24 +7,25 @@ export const StatisticsSection = styled.section`
 
   background-color: ${props => props.theme.colors.primaryBgc};
 
-  padding: 20px;
+  padding: ${props => props.theme.spacing(5)};
 
   box-shadow: ${props => props.theme.boxShadow};
 
   border: ${props => props.theme.border};
-  border-radius: 4px;
+  border-radius: ${props => props.theme.spacing()};
 `;
 
 export const StatisticsTitle = styled.h2`
   font-size: 24px;
   color: ${props => props.theme.colors.primaryColor};
 
-  margin-bottom: 10px;
+  margin-bottom: ${props => props.theme.spacing(2)};
 `;
 
 export const StatisticsList = styled.ul`
   display: flex;
-  gap: 2px;
+  flex-wrap: wrap;
+  gap: ${props => props.theme.spacing(0.5)};
 
   list-style-type: none;
   padding: 0;
@@ -36,9 +37,9 @@ export const StatisticsItem = styled.li`
   align-items: center;
   justify-content: center;
 
-  padding: 10px;
+  padding: ${props => props.theme.spacing(2)};
 
-  border: 1px solid grey;
+  border: ${props => props.theme.border};
   box-shadow: ${props => props.theme.boxShadow};
 `;
 
@@ -47,7 +48,7 @@ export const StatisticsLabel = styled.span`
 
   font-weight: bold;
 
-  margin-right: 10px;
+  margin-right: ${props => props.theme.spacing(2)};
 `;
 
 export const StatisticsPercentage = styled.span`
