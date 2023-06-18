@@ -33,5 +33,6 @@ export const TransactionTh = styled.th`
 export const TransactionTd = styled.td`
   padding: ${props => props.theme.spacing(2)};
   border: ${props => props.theme.border};
+
   text-align: center;
 `;
